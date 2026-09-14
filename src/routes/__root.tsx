@@ -29,7 +29,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'Habeeb Oyedele — Web & Mobile Product Engineer',
+        title: 'Habeeb Oyedele | Web & Mobile Product Engineer',
       },
       {
         name: 'description',

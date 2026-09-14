@@ -5,7 +5,7 @@ export const Route = createFileRoute('/')({
   component: Home,
   head: () => ({
     meta: [
-      { title: 'Habeeb Oyedele — Web & Mobile Product Engineer' },
+      { title: 'Habeeb Oyedele | Web & Mobile Product Engineer' },
       {
         name: 'description',
         content:
@@ -26,7 +26,7 @@ function Home() {
         </h1>
         <div className="hero__footer">
           <p>
-            I’m Habeeb Oyedele. I build thoughtful web and mobile products—from
+            I’m Habeeb Oyedele. I build thoughtful web and mobile products, from
             polished interfaces to the systems that make them work.
           </p>
           <a href="#selected-work">
@@ -36,7 +36,7 @@ function Home() {
       </section>
       <section id="selected-work" className="shell section">
         <header className="section-heading">
-          <p className="eyebrow">Selected work / 01—06</p>
+          <p className="eyebrow">Selected work / 01 to 06</p>
           <h2>Products shaped from idea to interface.</h2>
         </header>
         <ProjectList />
@@ -54,7 +54,7 @@ function Home() {
             <span>01</span>
             <h3>Product frontends</h3>
             <p>
-              Responsive applications, dashboards, data-rich interfaces, and
+              Responsive applications, dashboards, data rich interfaces, and
               consumer product experiences.
             </p>
           </article>
@@ -62,7 +62,7 @@ function Home() {
             <span>02</span>
             <h3>Mobile applications</h3>
             <p>
-              Cross-platform mobile products designed for smaller screens and
+              Cross platform mobile products designed for smaller screens and
               touch interaction.
             </p>
           </article>
@@ -92,7 +92,7 @@ function Home() {
             </div>
             <div>
               <dt>Mobile</dt>
-              <dd>React Native · Expo · Touch-first product interfaces</dd>
+              <dd>React Native · Expo · Touch first product interfaces</dd>
             </div>
             <div>
               <dt>Backend & systems</dt>
@@ -105,11 +105,11 @@ function Home() {
         </div>
       </section>
       <section className="shell section home-about">
-        <p className="eyebrow">A product-minded approach</p>
+        <p className="eyebrow">A product minded approach</p>
         <div>
           <h2>
             Good engineering begins with understanding what the product needs to
-            do—and who it needs to work for.
+            do, and who it needs to work for.
           </h2>
           <Link className="text-link" to="/about">
             More about my approach <span>↗</span>
