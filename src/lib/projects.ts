@@ -99,35 +99,35 @@ const projectCatalog: readonly Project[] = [
     repoUrl: 'https://github.com/Oyedelehabeeb/travel-int',
   },
   {
-    slug: 'ecovogue',
-    title: 'Ecovogue',
-    discipline: 'Commerce experience',
-    platform: 'Responsive storefront',
+    slug: 'learned',
+    title: 'Learned',
+    discipline: 'Learning platform',
+    platform: 'Responsive web product',
     summary:
-      'A fashion storefront shaped around confident browsing, clear category paths, saved products, and cart flow.',
+      'An approachable course discovery experience designed to move learners from curiosity into structured study.',
     thesis:
-      'Fashion commerce should give the collection room to lead. Ecovogue pairs expressive campaign imagery with a restrained interface that keeps shopping actions close at hand.',
+      'Online learning becomes easier to enter when the interface makes the next step obvious. Learned focuses its public experience on course discovery and a clear route into the learner account.',
     context:
-      'The storefront needs to serve visitors who arrive ready to shop as well as people still exploring. Category structure, product discovery, saved items, and cart access must remain understandable without competing with the visual identity.',
+      'Learning platforms often have to explain a broad catalogue without overwhelming first time visitors. The public surface must build orientation quickly, while sign in and enrolment paths remain easy to find.',
     productDecisions: [
-      'Use campaign led imagery as the emotional entry point while keeping direct shop actions visible.',
-      'Separate women, men, and baby collections at the top level to shorten common browsing paths.',
-      'Keep saved products, cart, and account actions present throughout discovery.',
-      'Balance featured and trending merchandising with clear product group navigation.',
+      'Lead with a focused learning proposition and two clear actions: get started or browse courses.',
+      'Keep authentication visible without allowing account controls to dominate discovery.',
+      'Use course led sections to turn broad marketing into tangible learning choices.',
+      'Avoid using promotional audience numbers as portfolio evidence; the product experience is the proof presented here.',
     ],
     engineeringDecisions: [
-      'Build the storefront from reusable catalogue and merchandising sections while preserving different visual compositions.',
-      'Treat saved products and cart state as persistent parts of the browsing experience rather than isolated destination pages.',
-      'Use responsive image led layouts that preserve hierarchy from wide campaign canvases to small touch screens.',
+      'Compose the experience from reusable course, feature, and navigation patterns.',
+      'Preserve clear focus order and touch targets across marketing and account entry points.',
+      'Design responsive content hierarchy for both scanning and longer course descriptions.',
     ],
     stack: ['React', 'JavaScript', 'Responsive CSS', 'Vercel'],
     result:
-      'The public storefront presents a complete discovery surface with segmented collections, merchandising areas, saved items, cart access, and account entry points.',
-    image: '/projects/ecovogue.png',
+      'The live product provides a polished entry point for discovering courses, understanding the learning offer, and moving into registration or sign in.',
+    image: '/projects/learned.png',
     imageAlt:
-      'Ecovogue fashion storefront with campaign photography and collection navigation.',
-    liveUrl: 'https://ecovogue-jade.vercel.app/',
-    repoUrl: 'https://github.com/Oyedelehabeeb/ecovogue',
+      'Redesigned Learned homepage with green editorial typography and a Stay curious learning illustration.',
+    liveUrl: 'https://learned-website.vercel.app/',
+    repoUrl: 'https://github.com/Oyedelehabeeb/learned-website',
   },
   {
     slug: 'opal-horizon',
@@ -160,37 +160,6 @@ const projectCatalog: readonly Project[] = [
     repoUrl: 'https://github.com/Oyedelehabeeb/the-opal-horizon-website',
   },
   {
-    slug: 'learned',
-    title: 'Learned',
-    discipline: 'Learning platform',
-    platform: 'Responsive web product',
-    summary:
-      'An approachable course discovery experience designed to move learners from curiosity into structured study.',
-    thesis:
-      'Online learning becomes easier to enter when the interface makes the next step obvious. Learned focuses its public experience on course discovery and a clear route into the learner account.',
-    context:
-      'Learning platforms often have to explain a broad catalogue without overwhelming first time visitors. The public surface must build orientation quickly, while sign in and enrolment paths remain easy to find.',
-    productDecisions: [
-      'Lead with a focused learning proposition and two clear actions: get started or browse courses.',
-      'Keep authentication visible without allowing account controls to dominate discovery.',
-      'Use course led sections to turn broad marketing into tangible learning choices.',
-      'Avoid using promotional audience numbers as portfolio evidence; the product experience is the proof presented here.',
-    ],
-    engineeringDecisions: [
-      'Compose the experience from reusable course, feature, and navigation patterns.',
-      'Preserve clear focus order and touch targets across marketing and account entry points.',
-      'Design responsive content hierarchy for both scanning and longer course descriptions.',
-    ],
-    stack: ['React', 'JavaScript', 'Responsive CSS', 'Vercel'],
-    result:
-      'The live product provides a polished entry point for discovering courses, understanding the learning offer, and moving into registration or sign in.',
-    image: '/projects/learned.png',
-    imageAlt:
-      'Redesigned Learned homepage with green editorial typography and a Stay curious learning illustration.',
-    liveUrl: 'https://learned-website.vercel.app/',
-    repoUrl: 'https://github.com/Oyedelehabeeb/learned-website',
-  },
-  {
     slug: 'chopng',
     title: 'chopNG',
     discipline: 'Mobile product system',
@@ -221,6 +190,37 @@ const projectCatalog: readonly Project[] = [
     liveUrl: 'https://chopng-admin.vercel.app/',
     liveLabel: 'Open admin surface',
     repoUrl: 'https://github.com/Oyedelehabeeb/chop-chop',
+  },
+  {
+    slug: 'ecovogue',
+    title: 'Ecovogue',
+    discipline: 'Commerce experience',
+    platform: 'Responsive storefront',
+    summary:
+      'A fashion storefront shaped around confident browsing, clear category paths, saved products, and cart flow.',
+    thesis:
+      'Fashion commerce should give the collection room to lead. Ecovogue pairs expressive campaign imagery with a restrained interface that keeps shopping actions close at hand.',
+    context:
+      'The storefront needs to serve visitors who arrive ready to shop as well as people still exploring. Category structure, product discovery, saved items, and cart access must remain understandable without competing with the visual identity.',
+    productDecisions: [
+      'Use campaign led imagery as the emotional entry point while keeping direct shop actions visible.',
+      'Separate women, men, and baby collections at the top level to shorten common browsing paths.',
+      'Keep saved products, cart, and account actions present throughout discovery.',
+      'Balance featured and trending merchandising with clear product group navigation.',
+    ],
+    engineeringDecisions: [
+      'Build the storefront from reusable catalogue and merchandising sections while preserving different visual compositions.',
+      'Treat saved products and cart state as persistent parts of the browsing experience rather than isolated destination pages.',
+      'Use responsive image led layouts that preserve hierarchy from wide campaign canvases to small touch screens.',
+    ],
+    stack: ['React', 'JavaScript', 'Responsive CSS', 'Vercel'],
+    result:
+      'The public storefront presents a complete discovery surface with segmented collections, merchandising areas, saved items, cart access, and account entry points.',
+    image: '/projects/ecovogue.png',
+    imageAlt:
+      'Ecovogue fashion storefront with campaign photography and collection navigation.',
+    liveUrl: 'https://ecovogue-jade.vercel.app/',
+    repoUrl: 'https://github.com/Oyedelehabeeb/ecovogue',
   },
 ]
 
