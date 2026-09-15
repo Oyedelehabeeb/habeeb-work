@@ -227,10 +227,10 @@ const projectCatalog: readonly Project[] = [
 const projectOrder = [
   'football-explorer',
   'travel-intelligence',
-  'opal-horizon',
   'learned',
-  'ecovogue',
+  'opal-horizon',
   'chopng',
+  'ecovogue',
 ] as const
 
 export const projects = projectOrder.map((slug) => {
