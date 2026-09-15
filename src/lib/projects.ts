@@ -186,7 +186,7 @@ const projectCatalog: readonly Project[] = [
       'The live product provides a polished entry point for discovering courses, understanding the learning offer, and moving into registration or sign in.',
     image: '/projects/learned.png',
     imageAlt:
-      'Learned online learning homepage with course focused copy and a student portrait.',
+      'Redesigned Learned homepage with green editorial typography and a Stay curious learning illustration.',
     liveUrl: 'https://learned-website.vercel.app/',
     repoUrl: 'https://github.com/Oyedelehabeeb/learned-website',
   },
