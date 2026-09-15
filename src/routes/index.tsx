@@ -1,5 +1,7 @@
 import { Link, createFileRoute } from '@tanstack/react-router'
 import { projects } from '../lib/projects'
+import { WorkbenchIllustration } from '../components/workbench-illustration'
+import { ArrowUpRight, FolderOpen } from 'lucide-react'
 
 export const Route = createFileRoute('/')({
   component: Home,
@@ -19,19 +21,46 @@ function Home() {
   return (
     <main id="main-content">
       <section className="shell hero">
-        <p className="eyebrow typewriter">Web & Mobile Product Engineer</p>
-        <h1>
-          I engineer digital products with <em>clarity and care</em>, and a
-          sharp eye for the experience.
-        </h1>
+        <div className="hero__copy">
+          <p className="workspace-label">
+            <span aria-hidden="true">✳</span> The personal workspace of Habeeb
+            Oyedele
+          </p>
+          <p className="eyebrow typewriter">Web & Mobile Product Engineer</p>
+          <h1>
+            Thoughtful products.
+            <br />
+            Built with <em>clarity and care.</em>
+          </h1>
+          <p className="hero__description">
+            I’m Habeeb. I build web and mobile products with equal care for the
+            interface, the experience, and the systems behind it.
+          </p>
+          <div className="hero__actions">
+            <a className="button-link" href="#selected-work">
+              Open selected work <FolderOpen size={16} aria-hidden="true" />
+            </a>
+            <Link className="text-link" to="/contact">
+              Start a conversation <ArrowUpRight size={15} aria-hidden="true" />
+            </Link>
+          </div>
+        </div>
+        <div className="hero__art">
+          <WorkbenchIllustration />
+          <p className="handwritten">
+            From the big picture
+            <br />
+            to the little details.
+          </p>
+          <span className="desk-sticker">Ideas → interfaces → products</span>
+        </div>
         <div className="hero__footer">
           <p>
-            I’m Habeeb Oyedele. I build thoughtful web and mobile products, from
-            polished interfaces to the systems that make them work.
+            Six public builds. Real products. A few good engineering stories.
           </p>
-          <a href="#selected-work">
-            Selected work <span>↓</span>
-          </a>
+          <span>
+            Take a look around <span aria-hidden="true">↓</span>
+          </span>
         </div>
       </section>
       <section id="selected-work" className="shell section">
@@ -133,6 +162,14 @@ export function ProjectList() {
             to="/work/$slug"
             params={{ slug: project.slug }}
           >
+            <div className="project-card__bar">
+              <span>
+                <FolderOpen size={14} aria-hidden="true" /> {project.title}
+              </span>
+              <span className="project-card__status">
+                Live product <span aria-hidden="true">↗</span>
+              </span>
+            </div>
             <div className="project-card__media">
               <img
                 src={project.image}

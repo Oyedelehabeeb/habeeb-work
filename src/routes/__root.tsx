@@ -9,6 +9,7 @@ import { TanStackDevtools } from '@tanstack/react-devtools'
 import TanStackQueryDevtools from '../integrations/tanstack-query/devtools'
 import { SiteFooter } from '../components/site-footer'
 import { SiteHeader } from '../components/site-header'
+import { Workspace } from '../components/workspace'
 
 import appCss from '../styles.css?url'
 
@@ -58,8 +59,10 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           Skip to content
         </a>
         <SiteHeader />
-        {children}
-        <SiteFooter />
+        <Workspace>
+          {children}
+          <SiteFooter />
+        </Workspace>
         {import.meta.env.DEV ? (
           <TanStackDevtools
             config={{ position: 'bottom-right' }}
