@@ -218,7 +218,7 @@ const projectCatalog: readonly Project[] = [
       'The public storefront presents a complete discovery surface with segmented collections, merchandising areas, saved items, cart access, and account entry points.',
     image: '/projects/ecovogue.png',
     imageAlt:
-      'Ecovogue fashion storefront with campaign photography and collection navigation.',
+      'Redesigned Ecovogue homepage with a considered fashion campaign, editorial headline, and collection navigation.',
     liveUrl: 'https://ecovogue-jade.vercel.app/',
     repoUrl: 'https://github.com/Oyedelehabeeb/ecovogue',
   },
