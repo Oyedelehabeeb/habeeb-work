@@ -11,7 +11,12 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="shell site-header__inner">
-        <Link className="wordmark" to="/" aria-label="Habeeb Oyedele, home">
+        <Link
+          resetScroll={false}
+          className="wordmark"
+          to="/"
+          aria-label="Habeeb Oyedele, home"
+        >
           <span className="brand-mark" aria-hidden="true">
             h.
           </span>{' '}
@@ -21,7 +26,11 @@ export function SiteHeader() {
           <ul className="site-nav">
             {navigation.map((item) => (
               <li key={item.to}>
-                <Link to={item.to} activeProps={{ 'aria-current': 'page' }}>
+                <Link
+                  resetScroll={false}
+                  to={item.to}
+                  activeProps={{ 'aria-current': 'page' }}
+                >
                   <item.icon size={15} aria-hidden="true" />
                   {item.label}
                 </Link>
@@ -29,7 +38,7 @@ export function SiteHeader() {
             ))}
           </ul>
         </nav>
-        <Link className="toolbar-cta" to="/contact">
+        <Link resetScroll={false} className="toolbar-cta" to="/contact">
           Let’s talk ↗
         </Link>
       </div>

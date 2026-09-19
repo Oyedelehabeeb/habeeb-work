@@ -10,7 +10,7 @@ export function SiteFooter() {
         </div>
         <div>
           <p>Have a product, role, or collaboration in mind?</p>
-          <Link className="text-link" to="/contact">
+          <Link resetScroll={false} className="text-link" to="/contact">
             Start a conversation <span aria-hidden="true">↗</span>
           </Link>
         </div>

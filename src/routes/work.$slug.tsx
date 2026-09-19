@@ -26,7 +26,7 @@ function ProjectPage() {
   return (
     <main id="main-content" className="case-study">
       <div className="shell case-study__topbar">
-        <Link className="back-link" to="/work">
+        <Link resetScroll={false} className="back-link" to="/work">
           ← All work
         </Link>
         <p className="eyebrow">
@@ -137,7 +137,11 @@ function ProjectPage() {
 
         <nav className="next-project" aria-label="Next project">
           <p className="eyebrow">Next project</p>
-          <Link to="/work/$slug" params={{ slug: next.slug }}>
+          <Link
+            resetScroll={false}
+            to="/work/$slug"
+            params={{ slug: next.slug }}
+          >
             {next.title} <span>→</span>
           </Link>
         </nav>

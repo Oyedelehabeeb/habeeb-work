@@ -26,7 +26,7 @@ function About() {
           appropriate without exposing confidential product information.
         </p>
       </div>
-      <Link className="button-link" to="/contact">
+      <Link resetScroll={false} className="button-link" to="/contact">
         Start a conversation <span>→</span>
       </Link>
     </main>

@@ -4,7 +4,7 @@ import { WorkbenchIllustration } from '../components/workbench-illustration'
 import { ArrowUpRight, FolderOpen } from 'lucide-react'
 
 export const Route = createFileRoute('/')({
-  component: Home,
+  component: () => null,
   head: () => ({
     meta: [
       { title: 'Habeeb Oyedele | Web & Mobile Product Engineer' },
@@ -17,9 +17,9 @@ export const Route = createFileRoute('/')({
   }),
 })
 
-function Home() {
+export function Home({ inactive = false }: { inactive?: boolean }) {
   return (
-    <main id="main-content">
+    <main id={inactive ? 'home-content' : 'main-content'}>
       <section className="shell hero">
         <div className="hero__copy">
           <p className="workspace-label">
@@ -40,7 +40,7 @@ function Home() {
             <a className="button-link" href="#selected-work">
               Open selected work <FolderOpen size={16} aria-hidden="true" />
             </a>
-            <Link className="text-link" to="/contact">
+            <Link resetScroll={false} className="text-link" to="/contact">
               Start a conversation <ArrowUpRight size={15} aria-hidden="true" />
             </Link>
           </div>
@@ -69,7 +69,7 @@ function Home() {
           <h2>Products shaped from idea to interface.</h2>
         </header>
         <ProjectList />
-        <Link className="button-link" to="/work">
+        <Link resetScroll={false} className="button-link" to="/work">
           Explore all work <span>→</span>
         </Link>
       </section>
@@ -140,7 +140,7 @@ function Home() {
             Good engineering begins with understanding what the product needs to
             do, and who it needs to work for.
           </h2>
-          <Link className="text-link" to="/about">
+          <Link resetScroll={false} className="text-link" to="/about">
             More about my approach <span>↗</span>
           </Link>
         </div>
@@ -158,6 +158,7 @@ export function ProjectList() {
           key={project.slug}
         >
           <Link
+            resetScroll={false}
             className="project-card__link"
             to="/work/$slug"
             params={{ slug: project.slug }}
