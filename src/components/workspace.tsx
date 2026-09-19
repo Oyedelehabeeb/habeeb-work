@@ -79,7 +79,7 @@ export function Workspace({ children }: { children: React.ReactNode }) {
     : (shortcuts.find((item) => item.to === pathname)?.label ?? 'Portfolio')
 
   return (
-    <div className="desktop">
+    <div className={`desktop${maximized && isOpen ? ' desktop--maximized' : ''}`}>
       <nav className="desktop-shortcuts" aria-label="Workspace shortcuts">
         {shortcuts.map(({ to, label, icon: Icon }) => (
           <Link

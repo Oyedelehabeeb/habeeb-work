@@ -269,13 +269,18 @@ svg {
   overflow-anchor: none;
 }
 .floating-window--maximized {
-  top: 0;
+  top: 65px;
   bottom: 0;
   left: 0;
   right: 0;
   border: 0;
   border-radius: 0;
   box-shadow: none;
+}
+.desktop--maximized .workspace-home,
+.desktop--maximized .desktop-shortcuts,
+.desktop--maximized .desktop-caption {
+  visibility: hidden;
 }
 .floating-titlebar {
   flex-shrink: 0;
